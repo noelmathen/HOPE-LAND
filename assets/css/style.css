@@ -1,0 +1,51 @@
+/* Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+body { font-family:'Montserrat',sans-serif; color:#333; line-height:1.6; }
+
+/* Container */
+.container { width:90%; max-width:1200px; margin:0 auto; padding:60px 0; }
+
+/* Navbar */
+.navbar { position:fixed; width:100%; background:rgba(255,255,255,0.9); box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:1000; }
+.navbar .container { display:flex; justify-content:space-between; align-items:center; }
+.navbar .logo { font-weight:600; font-size:1.2rem; color:#2c3e50; text-decoration:none; }
+.navbar nav ul { list-style:none; display:flex; gap:20px; }
+.navbar nav a { color:#2c3e50; text-decoration:none; transition:color .3s; }
+.navbar nav a:hover { color:#e67e22; }
+
+/* Hero */
+.hero { height:100vh; background:url('../images/hero.jpg') center/cover no-repeat; position:relative; display:flex; align-items:center; justify-content:center; }
+.hero .overlay { position:absolute; inset:0; background:rgba(0,0,0,0.5); }
+.hero-content { position:relative; text-align:center; color:#fff; max-width:600px; animation:fadeIn 1s ease-out; }
+.hero-content h1 { font-size:3rem; margin-bottom:1rem; }
+.hero-content p { margin-bottom:2rem; }
+.btn { display:inline-block; padding:0.75rem 1.5rem; background:#e67e22; color:#fff; border-radius:4px; text-decoration:none; transition:background .3s; }
+.btn:hover { background:#cf711f; }
+
+/* Sections */
+.section-title { text-align:center; font-size:2rem; margin-bottom:2rem; position:relative; }
+.section-title::after { content:''; width:60px; height:4px; background:#e67e22; position:absolute; bottom:-10px; left:50%; transform:translateX(-50%); }
+
+.about, .services, .contact { overflow:hidden; }
+.about { display:flex; align-items:center; gap:40px; }
+.about-image img { width:100%; border-radius:8px; }
+.about-text ul { margin-top:1rem; list-style:inside disc; }
+
+/* Service Cards */
+.service-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; }
+.card { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center; transition:transform .3s; }
+.card img { width:100%; height:180px; object-fit:cover; }
+.card h3 { margin:1rem 0 .5rem; }
+.card p { padding:0 1rem 1.5rem; }
+.card:hover { transform:translateY(-8px); }
+
+/* Contact */
+.contact-info { list-style:none; margin:1rem 0; }
+.contact-info li { margin-bottom:0.5rem; }
+
+/* Footer */
+.footer { text-align:center; padding:1.5rem 0; background:#f8f8f8; }
+.footer .socials a { margin:0 0.5rem; color:#555; text-decoration:none; }
+
+/* Animations */
+@keyframes fadeIn { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
