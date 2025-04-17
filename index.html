@@ -1,103 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HOPE LAND Real Estate – Qatar</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOPE LAND Real Estate – Qatar</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <header class="navbar">
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">HOPE LAND</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Qatar’s Premier Properties</h1>
+            <p>Your journey to the perfect land, villa, or apartment starts here.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container">
+        <div class="about-image" data-aos="fade-right" data-aos-offset="200">
+            <img src="assets/images/office.jpg" alt="HOPE LAND Office">
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-offset="200">
+            <h2>About HOPE LAND</h2>
+            <p>HOPE LAND, founded by Mr Safan P, is committed to connecting you with Qatar’s most coveted real estate.
+                From undeveloped land to luxury villas and urban apartments, we cater to every dream and budget.</p>
+            <ul>
+                <li>✓ Bespoke property sourcing</li>
+                <li>✓ Honest pricing & expert negotiation</li>
+                <li>✓ End‑to‑end client support</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services -->
+<section id="services" class="services section-light">
     <div class="container">
-      <a href="#" class="logo">HOPE LAND</a>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Discover Qatar’s Premier Properties</h1>
-      <p>Your journey to the perfect land, villa, or apartment starts here.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about container">
-    <div class="about-image wow fadeIn">
-      <img src="assets/images/office.jpg" alt="HOPE LAND Office">
-    </div>
-    <div class="about-text wow slideInRight">
-      <h2>About HOPE LAND</h2>
-      <p>HOPE LAND, founded by Mr Safan P, is committed to connecting you with Qatar’s most coveted real estate. From undeveloped land to luxury villas and urban apartments, we cater to every dream and budget.</p>
-      <ul>
-        <li>✓ Bespoke property sourcing</li>
-        <li>✓ Honest pricing & expert negotiation</li>
-        <li>✓ End‑to‑end client support</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="services container">
-    <h2 class="section-title wow fadeInUp">Our Services</h2>
-    <div class="service-cards">
-      <div class="card wow zoomIn" data-wow-delay="0.1s">
-        <img src="assets/images/property1.jpg" alt="Land Plots">
-        <h3>Land Plots</h3>
-        <p>Strategically located parcels for residential or commercial development.</p>
+  
+      <!-- Title + Subtitle -->
+      <h2
+        class="section-title"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >Our Services</h2>
+      <p
+        class="section-subtitle"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >Explore how HOPE LAND can help you find—and secure—your ideal property in Qatar.</p>
+  
+      <!-- Cards Grid -->
+      <div class="service-cards">
+        <!-- Card 1 -->
+        <div
+          class="service-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="200"
+        >
+          <div class="service-thumb">
+            <img src="assets/images/property1.jpg" alt="Land Plots">
+            <div class="service-overlay">
+              <a href="#" class="service-btn">Learn More</a>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Land Plots</h3>
+            <p>Prime parcels strategically located for residential or commercial development.</p>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div
+          class="service-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >
+          <div class="service-thumb">
+            <img src="assets/images/property2.jpg" alt="Villas & Homes">
+            <div class="service-overlay">
+              <a href="#" class="service-btn">Learn More</a>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Villas & Homes</h3>
+            <p>Elegant villas and family homes in exclusive, gated communities.</p>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div
+          class="service-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="400"
+        >
+          <div class="service-thumb">
+            <img src="assets/images/property3.jpg" alt="Apartments">
+            <div class="service-overlay">
+              <a href="#" class="service-btn">Learn More</a>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Apartments</h3>
+            <p>Contemporary city apartments and serviced residences for modern living.</p>
+          </div>
+        </div>
       </div>
-      <div class="card wow zoomIn" data-wow-delay="0.2s">
-        <img src="assets/images/property2.jpg" alt="Villas & Homes">
-        <h3>Villas & Homes</h3>
-        <p>Elegant villas and family homes in private, gated communities.</p>
-      </div>
-      <div class="card wow zoomIn" data-wow-delay="0.3s">
-        <img src="assets/images/property3.jpg" alt="Apartments">
-        <h3>Apartments</h3>
-        <p>Contemporary city apartments and serviced residences for modern living.</p>
-      </div>
     </div>
   </section>
+  
 
-  <!-- Contact -->
-  <section id="contact" class="contact container wow fadeInUp">
-    <h2>Contact Us</h2>
-    <p>Ready to explore your next property? Let’s make it happen.</p>
-    <ul class="contact-info">
-      <li><strong>HOPE LAND Real Estate</strong></li>
-      <li>🏢 Placeholder Office: Building 12, Business Bay, Doha, Qatar</li>
-      <li><strong>Mr Safan P</strong></li>
-      <li>📞 +974 7474 8005</li>
-      <li>📧 info@hopeland.qa</li>
-    </ul>
-    <a href="tel:+97474748005" class="btn">Call Now</a>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="contact section-light" data-aos="fade-up" data-aos-offset="150">
+        <div class="container contact-container">
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 HOPE LAND Real Estate. All Rights Reserved.</p>
-    <div class="socials">
-      <a href="#" aria-label="Facebook">Fb</a>
-      <a href="#" aria-label="Instagram">Ig</a>
-      <a href="#" aria-label="LinkedIn">Li</a>
-    </div>
-  </footer>
+            <!-- Info Panel -->
+            <div class="contact-info-panel" data-aos="fade-right" data-aos-delay="200">
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-subtitle">
+                    Let’s turn your vision into reality. Fill out the form or reach us directly.
+                </p>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Building 12, Business Bay, Doha, Qatar</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+974 7474 8005</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@hopeland.qa</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-user"></i>
+                    <span>Mr Safan P</span>
+                </div>
+            </div>
 
-  <script src="assets/js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>new WOW().init();</script>
+            <!-- Contact Form -->
+            <form action="#" class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required />
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <!-- Logo / Symbol -->
+            <div class="footer-brand">
+                <a href="#" class="logo">HOPE LAND</a>
+            </div>
+
+            <!-- Footer Links -->
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Copyright -->
+            <div class="footer-copy">
+                <p>© All Rights Reserved. <strong>HOPE LAND</strong></p>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+
+    <!-- Your JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+    <script>
+        window.scrollTo(0, 0);
+    </script>
 </body>
+
 </html>
