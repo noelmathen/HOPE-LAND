@@ -1,20 +1,20 @@
 // Mobile menu toggle (if you add one later)
 // Smooth scroll offset for fixed header
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      const offset = document.querySelector('.navbar').offsetHeight;
-      window.scrollTo({
-        top: target.offsetTop - offset,
-        behavior: 'smooth'
-      });
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    const offset = document.querySelector('.navbar').offsetHeight;
+    window.scrollTo({
+      top: target.offsetTop - offset,
+      behavior: 'smooth'
     });
   });
+});
 
-  // — Mobile menu toggle —
+// — Mobile menu toggle —
 const navToggle = document.querySelector('.nav-toggle');
-const navMenu   = document.querySelector('.nav-menu');
+const navMenu = document.querySelector('.nav-menu');
 
 navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('open');

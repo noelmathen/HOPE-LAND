@@ -273,63 +273,70 @@ body {
 .services.section-light {
     background: #fff;
     padding: 4rem 0;
-  }
-  .section-subtitle {
+}
+
+.section-subtitle {
     text-align: center;
     color: #555;
     max-width: 600px;
     margin: 0.5rem auto 2rem;
     font-size: 1rem;
-  }
-  
-  /* Grid */
-  .service-cards {
+}
+
+/* Grid */
+.service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-  }
-  
-  /* Card */
-  .service-card {
+}
+
+/* Card */
+.service-card {
     background: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .service-card:hover {
+}
+
+.service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  /* Image + Overlay */
-  .service-thumb {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image + Overlay */
+.service-thumb {
     position: relative;
     overflow: hidden;
-  }
-  .service-thumb img {
+}
+
+.service-thumb img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.5s ease;
-  }
-  .service-card:hover .service-thumb img {
+}
+
+.service-card:hover .service-thumb img {
     transform: scale(1.1);
-  }
-  .service-overlay {
+}
+
+.service-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  .service-card:hover .service-overlay {
+}
+
+.service-card:hover .service-overlay {
     opacity: 1;
-  }
-  .service-btn {
+}
+
+.service-btn {
     background: #e67e22;
     color: #fff;
     padding: 0.6rem 1.2rem;
@@ -337,33 +344,36 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: background 0.3s ease;
-  }
-  .service-btn:hover {
+}
+
+.service-btn:hover {
     background: #cf711f;
-  }
-  
-  /* Content */
-  .service-content {
+}
+
+/* Content */
+.service-content {
     padding: 1.5rem;
     text-align: center;
-  }
-  .service-content h3 {
+}
+
+.service-content h3 {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
     color: #2c3e50;
-  }
-  .service-content p {
+}
+
+.service-content p {
     color: #555;
     font-size: 0.95rem;
-  }
-  
-  /* Responsiveness (optional tweaks) */
-  @media (max-width: 600px) {
+}
+
+/* Responsiveness (optional tweaks) */
+@media (max-width: 600px) {
     .service-thumb img {
-      height: 180px;
+        height: 180px;
     }
-  }
-  
+}
+
 
 /* —— Contact Section —— */
 .section-light {
